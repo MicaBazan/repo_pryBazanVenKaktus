@@ -1,0 +1,15 @@
+C:\Users\marti\Desktop\pryBazanSP1VenKaktus\bin\Debug\pryBazanSP1Ventas.exe.config
+C:\Users\marti\Desktop\pryBazanSP1VenKaktus\bin\Debug\pryBazanSP1Ventas.exe
+C:\Users\marti\Desktop\pryBazanSP1VenKaktus\bin\Debug\pryBazanSP1Ventas.pdb
+C:\Users\marti\Desktop\pryBazanSP1VenKaktus\obj\Debug\pryBazanSP1Ventas.csproj.AssemblyReference.cache
+C:\Users\marti\Desktop\pryBazanSP1VenKaktus\obj\Debug\pryBazanSP1Ventas.csproj.SuggestedBindingRedirects.cache
+C:\Users\marti\Desktop\pryBazanSP1VenKaktus\obj\Debug\pryBazanSP1Ventas.frmCliente.resources
+C:\Users\marti\Desktop\pryBazanSP1VenKaktus\obj\Debug\pryBazanSP1Ventas.frmConsultar.resources
+C:\Users\marti\Desktop\pryBazanSP1VenKaktus\obj\Debug\pryBazanSP1Ventas.frmPrincipal.resources
+C:\Users\marti\Desktop\pryBazanSP1VenKaktus\obj\Debug\pryBazanSP1Ventas.frmVendedor.resources
+C:\Users\marti\Desktop\pryBazanSP1VenKaktus\obj\Debug\pryBazanSP1Ventas.frmVentas.resources
+C:\Users\marti\Desktop\pryBazanSP1VenKaktus\obj\Debug\pryBazanSP1Ventas.Properties.Resources.resources
+C:\Users\marti\Desktop\pryBazanSP1VenKaktus\obj\Debug\pryBazanSP1Ventas.csproj.GenerateResource.cache
+C:\Users\marti\Desktop\pryBazanSP1VenKaktus\obj\Debug\pryBazanSP1Ventas.csproj.CoreCompileInputs.cache
+C:\Users\marti\Desktop\pryBazanSP1VenKaktus\obj\Debug\pryBazanSP1Ventas.exe
+C:\Users\marti\Desktop\pryBazanSP1VenKaktus\obj\Debug\pryBazanSP1Ventas.pdb
