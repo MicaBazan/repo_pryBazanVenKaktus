@@ -21,23 +21,13 @@ namespace pryBazanSP1Ventas
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             
-            //if(lstFactura.Text == "" & txtNumeroFac.Text == "" & lstIdCliente.Text == "" & lstIdVendedor.Text == "" & txtMonto.Text == "")
-            //{
-            //    MessageBox.Show("Debe completar los datos faltantes", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
-            
-            
-            //Creo una bandera
             bool bandera = false;
 
-
-            //Crea un archivo si no existe
+            //Crea un Archivo si no existe
             StreamWriter swArVenta = new StreamWriter("./venta.txt", true);
 
             swArVenta.Close();
 
-
-            //probar
             //if(File.Exists(".Cliente.txt")
             //{
 
@@ -47,35 +37,26 @@ namespace pryBazanSP1Ventas
             //    File.Create("./Cliente.txt");
             //}
 
-
-            //Lee el archivo de texto
             StreamReader srVenta = new StreamReader("./venta.txt");
 
-
-            //se crea una variable de tipo char para separar por caracter
             char separador = Convert.ToChar(";");
 
-
-            //Mientras el archivo sea distinto al final
             while (!srVenta.EndOfStream)
             {
-                //Crea un Vector para almacenar los datos del archivo, y los separa con el Split (Divide una cadena)
+                //Crea un Vector para almacenar los datos del archivo
                 string[] venta = srVenta.ReadLine().Split(separador);
 
-
                 //Verifica que no se repita el id
-                //En el caso de que este repetido bandera pasa a verdadero
                 if (txtNumeroFac.Text == venta[0])
                 {
                     bandera = true;
                 }
             }
 
-            //Se cierra el archivo de texto
             srVenta.Close();
 
 
-            // En caso que el id no se repita escribe en el archivo, sino muestra un mensaje de id repetido
+            // En caso que el id no se repita escribe en el archivo
             if (bandera == false)
             {
 
@@ -88,14 +69,7 @@ namespace pryBazanSP1Ventas
 
                 MessageBox.Show("Datos cargados correctamente.", "Cargados", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                lstFactura.Text = "";
-                txtNumeroFac.Text = "";
-                lstIdCliente.Text = "";
-                lstIdVendedor.Text = "";
-                txtMonto.Text = "";
-
-                lstFactura.Focus();
-
+                LimpiarControles();
             }
 
 
@@ -103,16 +77,20 @@ namespace pryBazanSP1Ventas
             {
                 MessageBox.Show("El numero de factura ya existe", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                lstFactura.Text = "";
-                txtNumeroFac.Text = "";
-                lstIdCliente.Text = "";
-                lstIdVendedor.Text = "";
-                txtMonto.Text = "";
-
-                lstFactura.Focus();
+                LimpiarControles();
             }
         }
 
+        private void LimpiarControles()
+        {
+            lstFactura.Text = "";
+            txtNumeroFac.Text = "";
+            lstIdCliente.Text = "";
+            lstIdVendedor.Text = "";
+            txtMonto.Text = "";
+
+            lstFactura.Focus();
+        }
 
         //Evento KeyPress: debe permitir ingresar solamente números (y borrar)
         private void txtNumeroFac_KeyPress(object sender, KeyPressEventArgs e)
